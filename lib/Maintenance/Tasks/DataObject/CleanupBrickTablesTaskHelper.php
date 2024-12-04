@@ -25,7 +25,7 @@ use Psr\Log\LoggerInterface;
  */
 class CleanupBrickTablesTaskHelper implements ConcreteTaskHelperInterface
 {
-    private const PIMCORE_OBJECTBRICK_CLASS_DIRECTORY = PIMCORE_CLASS_DIRECTORY . '/DataObject/Objectbrick/Data';
+    private const PIMCORE_OBJECTBRICK_CLASS_DIRECTORY = PIMCORE_CLASS_DEFINITION_DIRECTORY . '/objectbricks';
 
     public function __construct(
         private LoggerInterface $logger,
