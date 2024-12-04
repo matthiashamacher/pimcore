@@ -25,7 +25,7 @@ use Psr\Log\LoggerInterface;
 class CleanupFieldcollectionTablesTaskHelper implements ConcreteTaskHelperInterface
 {
     private const PIMCORE_FIELDCOLLECTION_CLASS_DIRECTORY =
-        PIMCORE_CLASS_DIRECTORY . '/DataObject/Fieldcollection/Data';
+        PIMCORE_CLASS_DEFINITION_DIRECTORY . '/fieldcollections';
 
     public function __construct(
         private LoggerInterface $logger,
